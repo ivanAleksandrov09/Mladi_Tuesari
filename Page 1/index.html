@@ -18,13 +18,41 @@
 
 
     <div class="scroll">
-        <a href="../Page 2/index.html"><div id="chest"><button id="Chest">Chest</button><br></div></a>
-        <a href="../Page 2/index.html"><div id="biceps"><button id="Biceps">Biceps</button><br></div></a>
-        <a href="../Page 2/index.html"><div id="triceps"><button id="Triceps">Triceps</button><br></div></a>
-        <a href="../Page 2/index.html"><div id="shoulders"><button id="Shoulders">Shoulders</button><br></div></a>
-        <a href="../Page 2/index.html"><div id="back"><button id="Back">Back</button><br></diV></a>
-        <a href="../Page 2/index.html"><div id="legs"><button id="Legs">Legs</button><br></diV></a>
-        <a href="../Page 2/index.html"><div id="abs"><button id="Abs">Abs</button><br></div></a>
+        <a href="../Page 2/index.html"><div id="chest"><button id="Chest" onclick="
+            chosenElement='chest';
+            func();
+        ">Chest</button><br></div></a>
+        <a href="../Page 2/index.html"><div id="biceps"><button id="Biceps" onclick="
+            chosenElement='biceps';
+            func();
+        ">Biceps</button><br></div></a>
+        <a href="../Page 2/index.html"><div id="triceps"><button id="Triceps" onclick="
+            chosenElement='triceps';
+            func();
+        ">Triceps</button><br></div></a>
+        <a href="../Page 2/index.html"><div id="shoulders"><button id="Shoulders" onclick="
+            chosenElement='shoulders';
+            func();
+        ">Shoulders</button><br></div></a>
+        <a href="../Page 2/index.html"><div id="back"><button id="Back" onclick="
+            chosenElement='back';
+            func();
+        ">Back</button><br></diV></a>
+        <a href="../Page 2/index.html"><div id="legs"><button id="Legs" onclick="
+            chosenElement='legs';
+            func();
+        ">Legs</button><br></diV></a>
+        <a href="../Page 2/index.html"><div id="abs"><button id="Abs" onclick="
+            chosenElement='abs';
+            func();
+        ">Abs</button><br></div></a>
     </div>
+<script>
+    let chosenElement;
+    function func(){
+        localStorage.setItem('name', chosenElement);
+        window.location.href = "Page2/index.html";
+    }
+    </script>
 </body>
 </html>

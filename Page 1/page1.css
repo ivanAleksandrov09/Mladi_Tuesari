@@ -1,0 +1,35 @@
+button{
+    background-color: hsl(211, 72%, 70%);
+    margin: 5px;
+    border-radius: 5px;
+    font-size:5em;
+    color:white;
+    text-align: center;
+    display: inline-block;
+}
+button:hover{
+    background-color: rgb(101, 101, 255);
+    cursor: pointer;
+}
+div.scroll div {
+    height: 390px;
+    width: 390px;
+    margin: 5px;
+    border: 2px solid black;
+}
+div{
+    display:inline-block;
+    height: 420px;
+    width: 810px;
+    margin-left: 10%;
+    margin-top: 22em;
+
+}
+div.scroll {
+    margin: 4px, 4px;
+    padding: 8px;
+    width: 850px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+}

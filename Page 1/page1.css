@@ -33,3 +33,35 @@ div.scroll {
     overflow-y: hidden;
     white-space: nowrap;
 }
+
+.navbar ul{
+    list-style-type: none;
+    padding: 5px;
+    margin: 0px;
+    background-color: hsl(211, 72%, 70%); 
+    overflow: hidden;
+    font-size:1.5em;
+
+}
+
+.navbar a{
+    margin: 0px;
+    color:white;
+    text-decoration: none;
+    padding: 20px;
+    display: block;
+    text-align:center;
+}
+
+.navbar a:hover{
+    background-color: rgba(0, 0, 0, 0.271);
+}
+
+.navbar li{
+    float: left;
+}
+
+video{
+    height: 300px;
+    
+}

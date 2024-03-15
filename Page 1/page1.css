@@ -25,6 +25,9 @@ button:hover{
     background-color: rgb(101, 101, 255);
     cursor: pointer;
 }
+.muscle-groups {
+    flex: 1;
+}
 .muscle-group-wrapper{
     display:inline-block;
     height: 400px;
@@ -155,3 +158,9 @@ footer{
         margin: 10px;
     }
 }
+.grid {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+

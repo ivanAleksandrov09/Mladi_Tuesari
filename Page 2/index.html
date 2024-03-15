@@ -1,132 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="page2.css" rel="stylesheet">
     <link href="../Page 1/page1.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <title>Select workout intensity</title>
 </head>
 
 <body>
-    <nav class="navbar">
-        <ul>
-            <li><a href="../Page 1/index.html">Home</a></li>
-            <p class="page_title">Easy-going fitness</p>
-        </ul>
-    </nav>
-    <div class="container">
-        <h1 class="title">Select workout intensity</h1>
-        <div id="Contain1">
-            <a id="beginner-button" href="../Page 3/page3.universal.html"><button class="button" onclick="
-            intensity='beginner';
-            func();
-            finalChoise();
-            ">Beginner</button></a></div>
-            <div id="Contain2"><a id="intermidiate-button" href="../Page 3/page3.universal.html"><button class="button" onclick="
-            intensity='intermidiate';
-            func();
-            finalChoise()
-            ">Intermidiate</button></a></div>
-            <div id="Contain3"><a id="advanced-button" href="../Page 3/page3.universal.html"><button class="button" onclick="
-            intensity='advanced';
-            func();
-            finalChoise();
-            ">Advanced</button></a></div>
-</div>
+    <div class="grid">
+
+
+        <header>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="../Page 1/index.html">Home</a></li>
+                    <p class="page_title">Easy-going fitness</p>
+                </ul>
+            </nav>
+        </header>
+        <main class="container">
+            <h1 class="title">Select workout intensity</h1>
+            <div class="intensity-wrapper">
+                <div class="intensity">
+                    <a id="beginner-button" href="../Page 3/page3.universal.html"><button class="button" onclick="
+                intensity='beginner';
+                func();
+                finalChoise();
+                ">Beginner</button></a>
+                </div>
+                <div class="intensity"><a id="intermidiate-button" href="../Page 3/page3.universal.html"><button
+                            class="button" onclick="
+                intensity='intermidiate';
+                func();
+                finalChoise()
+                ">Intermidiate</button></a></div>
+                <div class="intensity"><a id="advanced-button" href="../Page 3/page3.universal.html"><button
+                            class="button" onclick="
+                intensity='advanced';
+                func();
+                finalChoise();
+                ">Advanced</button></a></div>
+        </main>
+    
+    <footer>
+        <div class="FootContainer">
+            <div class="social">
+                <a href="https://www.instagram.com/" target="_blank" title="instagram"><i
+                        class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.youtube.com/" target="_blank" title="youtube"><i
+                        class="fa-brands fa-youtube"></i></a>
+                <a href="https://www.facebook.com/" target="_blank" title="facebook"><i
+                        class="fa-brands fa-facebook"></i></a>
+            </div>
+            <div class="Nav">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Home</a></li>
+                </ul>
+            </div>
+            <div class="Bottom">
+                <p>Copyright&copy;2024 Designed by <span class="designer">Mladite Tuesari</span></p>
+            </div>
+        </div>
+    </footer>
+    </div>
 </body>
 <script>
-    let savedChose=localStorage.getItem('name');
+    let savedChose = localStorage.getItem('name');
     console.log(savedChose);
     let intensity;
     let link;
-   function func() {
-       switch (savedChose) {
+    function func() {
+        switch (savedChose) {
             case 'chest':
                 {
-                if (intensity==='beginner') 
-                    link='BeginnerChest';
-                else if (intensity==='intermidiate') 
-                    link='IntermidiateChest';
-                else 
-                    if (intensity==='advanced')
-                    link='AdvancedChest';
-                break;
+                    if (intensity === 'beginner')
+                        link = 'BeginnerChest';
+                    else if (intensity === 'intermidiate')
+                        link = 'IntermidiateChest';
+                    else
+                        if (intensity === 'advanced')
+                            link = 'AdvancedChest';
+                    break;
                 }
-                case 'biceps':
+            case 'biceps':
                 {
-                if (intensity==='beginner') 
-                    link='BeginnerBiceps';
-                else if (intensity==='intermidiate') 
-                    link='IntermidiateBiceps';
-                else 
-                    if (intensity==='advanced')
-                    link='AdvancedBiceps';
-                break;
+                    if (intensity === 'beginner')
+                        link = 'BeginnerBiceps';
+                    else if (intensity === 'intermidiate')
+                        link = 'IntermidiateBiceps';
+                    else
+                        if (intensity === 'advanced')
+                            link = 'AdvancedBiceps';
+                    break;
                 }
-                case 'triceps':
+            case 'triceps':
                 {
-                if (intensity==='beginner') 
-                    link='BeginnerTriceps';
-                else if (intensity==='intermidiate') 
-                    link='IntermidiateTriceps';
-                else 
-                    if (intensity==='advanced')
-                    link='AdvancedTriceps';
-                break;
+                    if (intensity === 'beginner')
+                        link = 'BeginnerTriceps';
+                    else if (intensity === 'intermidiate')
+                        link = 'IntermidiateTriceps';
+                    else
+                        if (intensity === 'advanced')
+                            link = 'AdvancedTriceps';
+                    break;
                 }
-                case 'shoulders':
+            case 'shoulders':
                 {
-                if (intensity==='beginner') 
-                    link='BeginnerShoulders';
-                else if (intensity==='intermidiate') 
-                    link='IntermidiateShoulders';
-                else 
-                    if (intensity==='advanced')
-                    link='AdvancedShoulders';
-                break;
+                    if (intensity === 'beginner')
+                        link = 'BeginnerShoulders';
+                    else if (intensity === 'intermidiate')
+                        link = 'IntermidiateShoulders';
+                    else
+                        if (intensity === 'advanced')
+                            link = 'AdvancedShoulders';
+                    break;
                 }
-                case 'back':
+            case 'back':
                 {
-                if (intensity==='beginner') 
-                    link='BeginnerBack';
-                else if (intensity==='intermidiate') 
-                    link='IntermidiateBack';
-                else 
-                    if (intensity==='advanced')
-                    link='AdvancedBack';
-                break;
+                    if (intensity === 'beginner')
+                        link = 'BeginnerBack';
+                    else if (intensity === 'intermidiate')
+                        link = 'IntermidiateBack';
+                    else
+                        if (intensity === 'advanced')
+                            link = 'AdvancedBack';
+                    break;
                 }
-                case 'legs':
+            case 'legs':
                 {
-                if (intensity==='beginner') 
-                    link='BeginnerLegs';
-                else if (intensity==='intermidiate') 
-                    link='IntermidiateLegs';
-                else 
-                    if (intensity==='advanced')
-                    link='AdvancedLegs';
-                break;
+                    if (intensity === 'beginner')
+                        link = 'BeginnerLegs';
+                    else if (intensity === 'intermidiate')
+                        link = 'IntermidiateLegs';
+                    else
+                        if (intensity === 'advanced')
+                            link = 'AdvancedLegs';
+                    break;
                 }
-                case 'abs':
+            case 'abs':
                 {
-                if (intensity==='beginner') 
-                    link='BeginnerAbs';
-                else if (intensity==='intermidiate') 
-                    link='IntermidiateAbs';
-                else 
-                    if (intensity==='advanced')
-                    link='AdvancedAbs';
-                break;
+                    if (intensity === 'beginner')
+                        link = 'BeginnerAbs';
+                    else if (intensity === 'intermidiate')
+                        link = 'IntermidiateAbs';
+                    else
+                        if (intensity === 'advanced')
+                            link = 'AdvancedAbs';
+                    break;
                 }
-            }    
-
         }
+
+    }
     function finalChoise() {
-            console.log(`link==${link}`);
-            localStorage.setItem('correctChoise', link);
-            window.location.href='../Page 3/page3.universal.html';
+        console.log(`link==${link}`);
+        localStorage.setItem('correctChoise', link);
+        window.location.href = '../Page 3/page3.universal.html';
     }
     console.log(link);
 </script>
+
 </html>

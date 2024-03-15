@@ -16,15 +16,116 @@
         </ul>
     </nav>
     <div class="container">
-        <p class="title">Select workout intensity</p>
-        <a href="../Page 3/index.html"><button class="button">Beginner</button></a>
-        <a href="../Page 3/IntermidiateChest.html"><button class="button">Intermidiate</button></a>
-        <a href="../Page 3/AdvansedChest.html"><button class="button">Advanced</button></a>
+        <h1 class="title">Select workout intensity</h1>
+        <a id="beginner-button" href="../page3/page3.universal.html"><button class="button" onclick="
+        intensity='beginner';
+        func();
+        finalChoise();
+        ">Beginner</button></a>
+        <a id="intermidiate-button" href="../page3/page3.universal.html"><button class="button" onclick="
+        intensity='intermidiate';
+        func();
+        finalChoise()
+        ">Intermidiate</button></a>
+        <a id="advanced-button" href="../page3/page3.universal.html"><button class="button" onclick="
+        intensity='advanced';
+        func();
+        finalChoise();
+        ">Advanced</button></a>
     </div>
 </body>
 <script>
     let savedChose=localStorage.getItem('name');
     console.log(savedChose);
-</script>
+    let intensity;
+    let link;
+   function func() {
+       switch (savedChose) {
+            case 'chest':
+                {
+                if (intensity==='beginner') 
+                    link='BeginnerChest';
+                else if (intensity==='intermidiate') 
+                    link='IntermidiateChest';
+                else 
+                    if (intensity==='advanced')
+                    link='AdvancedChest';
+                break;
+                }
+                case 'biceps':
+                {
+                if (intensity==='beginner') 
+                    link='BeginnerBiceps';
+                else if (intensity==='intermidiate') 
+                    link='IntermidiateBiceps';
+                else 
+                    if (intensity==='advanced')
+                    link='AdvancedBiceps';
+                break;
+                }
+                case 'triceps':
+                {
+                if (intensity==='beginner') 
+                    link='BeginnerTriceps';
+                else if (intensity==='intermidiate') 
+                    link='IntermidiateTriceps';
+                else 
+                    if (intensity==='advanced')
+                    link='AdvancedTriceps';
+                break;
+                }
+                case 'shoulders':
+                {
+                if (intensity==='beginner') 
+                    link='BeginnerShoulders';
+                else if (intensity==='intermidiate') 
+                    link='IntermidiateShoulders';
+                else 
+                    if (intensity==='advanced')
+                    link='AdvancedShoulders';
+                break;
+                }
+                case 'back':
+                {
+                if (intensity==='beginner') 
+                    link='BeginnerBack';
+                else if (intensity==='intermidiate') 
+                    link='IntermidiateBack';
+                else 
+                    if (intensity==='advanced')
+                    link='AdvancedBack';
+                break;
+                }
+                case 'legs':
+                {
+                if (intensity==='beginner') 
+                    link='BeginnerLegs';
+                else if (intensity==='intermidiate') 
+                    link='IntermidiateLegs';
+                else 
+                    if (intensity==='advanced')
+                    link='AdvancedLegs';
+                break;
+                }
+                case 'abs':
+                {
+                if (intensity==='beginner') 
+                    link='BeginnerAbs';
+                else if (intensity==='intermidiate') 
+                    link='IntermidiateAbs';
+                else 
+                    if (intensity==='advanced')
+                    link='AdvancedAbs';
+                break;
+                }
+            }    
 
+        }
+    function finalChoise() {
+            console.log(`link==${link}`);
+            localStorage.setItem('correctChoise', link);
+            window.location.href='../page3/page3.universal.html';
+    }
+    console.log(link);
+</script>
 </html>

@@ -3,15 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="page1.css" rel="stylesheet">
-    
-    <title>Easy-going fitness</title>
+    <link href="page1.css" rel='stylesheet' >
+    <title></title>
 </head>
 <body>
     <nav class="navbar">
         <ul>
             <li><a href="../Page 1/index.html">Home</a></li>
-            <p class="page_title">Easy-going fitness</p>
+            <li></li>
         </ul>
     </nav>
 
@@ -21,7 +20,7 @@
                 <p class="title">Chest</p>
                 <button onclick="
                 chosenElement='chest';
-                func();
+                funct();
             ">View</button>
             </div>
         </a>
@@ -31,7 +30,7 @@
                 <p class="title">Biceps</p>
                 <button onclick="
                 chosenElement='biceps';
-                func();
+                funct();
             ">View</button>
             </div>
         </a>
@@ -41,7 +40,7 @@
                 <p class="title">Triceps</p>
                 <button onclick="
                 chosenElement='triceps';
-                func();
+                funct();
             ">View</button>
             </div>
         </a>
@@ -51,7 +50,7 @@
                 <p class="title">Shoulders</p>
                 <button onclick="
                 chosenElement='shoulders';
-                func();
+                funct();
             ">View</button>
             </div>
         </a>
@@ -61,7 +60,7 @@
                 <p class="title">Back</p>
                 <button onclick="
                 chosenElement='back';
-                func();
+                funct();
             ">View</button>
             </div>
         </a>
@@ -71,7 +70,7 @@
                 <p class="title">Legs</p>
                 <button onclick="
                 chosenElement='legs';
-                func();
+                funct();
             ">View</button>
             </div>
         </a>
@@ -81,11 +80,11 @@
                 <p class="title">Abs</p>
                 <button onclick="
                 chosenElement='abs';
-                func();
+                funct();
             ">View</button>
             </div>
         </a>
-            <script>
+        <script>
             let chosenElement;
             function funct(){
                 localStorage.setItem('name', chosenElement);
@@ -94,3 +93,4 @@
             </script>
 </body>
 </html>
+

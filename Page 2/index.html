@@ -4,18 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="page2.css" rel="stylesheet">
+    <link href="../Page 1/page1.css" rel="stylesheet">
     <title>Select workout intensity</title>
 </head>
+
 <body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="../Page 1/index.html">Home</a></li>
+            <p class="page_title">Easy-going fitness</p>
+        </ul>
+    </nav>
     <div class="container">
-        <h1 class="title">Select workout intensity</h1>
+        <p class="title">Select workout intensity</p>
         <a href="../Page 3/index.html"><button class="button">Beginner</button></a>
         <a href="../Page 3/IntermidiateChest.html"><button class="button">Intermidiate</button></a>
         <a href="../Page 3/AdvansedChest.html"><button class="button">Advanced</button></a>
     </div>
+</body>
 <script>
     let savedChose=localStorage.getItem('name');
     console.log(savedChose);
 </script>
-</body>
+
 </html>

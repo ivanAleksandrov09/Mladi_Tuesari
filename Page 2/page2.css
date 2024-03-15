@@ -1,7 +1,10 @@
+body {
+    background-color: rgb(31, 28, 28);
+    color: white;
+}
 .container {
     font-family: Arial, sans-serif;
-    text-align: center;
-    padding: 25%;
+    border: none;
 }
 
 .container .title {
@@ -9,6 +12,7 @@
 }
 
 .container .button {
+    display: inline-block;
     height: 130px;
     width: 250px;
     font-size: 2.3em;

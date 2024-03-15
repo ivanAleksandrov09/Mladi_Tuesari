@@ -1,6 +1,13 @@
 body {
     background-color: rgb(31, 28, 28);
 }
+.page_title {
+    text-align: right;
+    color: white;
+    height: 50%;
+    text-shadow: 5px 5px 5px black;
+    margin-right: 10px;
+}
 button{
     background-color: hsl(211, 72%, 70%);
     border: 3px solid hsl(211, 72%, 70%);
@@ -69,3 +76,85 @@ body div{
     float: left;
 }
 
+video{
+    height: 300px;
+    
+}
+
+footer{
+    background-color: hsl(211, 72%, 70%);
+}
+.Container-footer{
+    padding: 70px 30px 20px;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.social{
+    display: flex;
+    justify-content: left;
+}
+.social a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: whitesmoke;
+    margin: 10px;
+    border-radius: 50%;
+}
+.social a i{
+    font-size: 2em;
+    color: black;
+    opacity: 0.9;
+}
+.social a:hover{
+    background-color: #111;
+    transition: 0.3s;
+}
+.social a:hover i{
+    color: whitesmoke;
+    transition: 0.3s;
+}
+.Nav{
+    margin: 30px 0;
+}
+.Nav ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+.Nav ul li a{
+    color: whitesmoke;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.3s;
+}
+.Nav ul li a:hover{
+    opacity: 1;
+}
+.Bottom{
+    background-color: #000;
+    padding: 20px;
+    text-align: center;
+}
+.Bottom p{
+    color: whitesmoke;
+}
+.designer{
+    opacity: 0.7;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin: 0px 5px ;
+}
+@media (max-width: 700px){
+    .Nav ul{
+        flex-direction: column;
+    }
+    .Nav ul li{
+        width: 100%;
+        text-align: center;
+        margin: 10px;
+    }
+}

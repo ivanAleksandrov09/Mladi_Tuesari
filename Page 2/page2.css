@@ -53,8 +53,3 @@ body {
     width: 100%;
     justify-content: space-around;
 }
-.grid {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}

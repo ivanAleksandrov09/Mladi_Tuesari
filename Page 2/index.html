@@ -29,19 +29,19 @@
             <h1 class="title">Select workout intensity</h1>
             <div class="intensity-wrapper">
                 <div class="intensity">
-                    <a id="beginner-button" href="../Page 3/page3.universal.html"><button class="button" onclick="
+                    <a id="beginner-button" href="../Page 3/index.html"><button class="button" onclick="
                 intensity='beginner';
                 func();
                 finalChoise();
                 ">Beginner</button></a>
                 </div>
-                <div class="intensity"><a id="intermidiate-button" href="../Page 3/page3.universal.html"><button
+                <div class="intensity"><a id="intermidiate-button" href="../Page 3/index.html"><button
                             class="button" onclick="
                 intensity='intermidiate';
                 func();
                 finalChoise()
                 ">Intermidiate</button></a></div>
-                <div class="intensity"><a id="advanced-button" href="../Page 3/page3.universal.html"><button
+                <div class="intensity"><a id="advanced-button" href="../Page 3/index.html"><button
                             class="button" onclick="
                 intensity='advanced';
                 func();
@@ -58,8 +58,6 @@
                         class="fa-brands fa-youtube"></i></a>
                 <a href="https://www.facebook.com/" target="_blank" title="facebook"><i
                         class="fa-brands fa-facebook"></i></a>
-                <a href="https://www.discord.com/" target="_blank" title="discord"><i
-                        class="fa-brands fa-discord"></i></a>        
             </div>
             <div class="Nav">
                 <ul>
@@ -77,7 +75,7 @@
     </div>
 </body>
 <script>
-    let savedChose = localStorage.getItem('name');
+    let savedChose = localStorage.getItem('chosenMuscleGroup');
     console.log(savedChose);
     let intensity;
     let link;
@@ -166,7 +164,7 @@
     function finalChoise() {
         console.log(`link==${link}`);
         localStorage.setItem('correctChoise', link);
-        window.location.href = '../Page 3/page3.universal.html';
+        window.location.href = '../Page 3/index.html';
     }
     console.log(link);
 </script>

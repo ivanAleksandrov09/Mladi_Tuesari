@@ -90,7 +90,7 @@
                     </ul>
                 </div>
                 <div class="Bottom">
-                    <p>Copyright&copy;2024 Designed by <span class="designer">Mladite Tuesari</span></p>
+                    <p>Copyright&copy;2024 Designed by <span class="designer">Mladi Tuesari</span></p>
                 </div>
             </div>
         </footer>
@@ -102,10 +102,15 @@
             viewWorkoutButton.addEventListener('click', function () {
                 const chosenMuscleGroup = viewWorkoutButton.getAttribute('muscle-group')
                 localStorage.setItem('chosenMuscleGroup', chosenMuscleGroup)
-                window.location.href = "/Page 2/index.html";
+                window.location.href = "../Page 2/index.html";
             });
         })
+
         let chosenElement;
+        function funct(chosenElement) {
+            localStorage.setItem('name', chosenElement);
+            window.location.href = "../Page 2/index.html";
+        }
     </script>
 </body>
 

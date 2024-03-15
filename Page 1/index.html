@@ -13,84 +13,66 @@
             <li></li>
         </ul>
     </nav>
-
-        <a href="../Page 2/index.html">
             <div class="container">
-                <img class="image" src="images (5).jpg">
+                <img class="image" src="https://cdn.pixabay.com/photo/2018/03/01/02/47/summer-3189602_1280.jpg">
                 <p class="title">Chest</p>
-                <button onclick="
-                chosenElement='chest';
-                funct();
-            ">View</button>
+                <button class="view-workout" muscle-group="chest">View</button>
             </div>
-        </a>
-        <a href="../Page 2/index.html">
+        
             <div class="container">
-                <img class="image" src="images (4).jpg">
-                <p class="title">Biceps</p>
-                <button onclick="
-                chosenElement='biceps';
-                funct();
-            ">View</button>
+                <img class="image" src="https://cdn.pixabay.com/photo/2017/09/27/18/52/gym-2793007_1280.jpg">
+                <p class="title" >Biceps</p>
+                <button class="view-workout" muscle-group="biceps">View</button>
             </div>
-        </a>
-        <a href="../Page 2/index.html">
+        
+        
             <div class="container">
                 <img class="image" src="images (2).jpg">
                 <p class="title">Triceps</p>
-                <button onclick="
-                chosenElement='triceps';
-                funct();
-            ">View</button>
+                <button class="view-workout" muscle-group="triceps">View</button>
             </div>
-        </a>
-        <a href="../Page 2/index.html">
+        
+        
             <div class="container">
                 <img class="image" src="https://cdn.pixabay.com/photo/2014/09/25/23/36/man-461195_1280.jpg">
                 <p class="title">Shoulders</p>
-                <button onclick="
-                chosenElement='shoulders';
-                funct();
-            ">View</button>
+                <button class="view-workout" muscle-group="shoulders">View</button></a>
             </div>
-        </a>
-        <a href="../Page 2/index.html">
+        
+        
             <div class="container">
                 <img class="image" src="images (3).jpg">
                 <p class="title">Back</p>
-                <button onclick="
-                chosenElement='back';
-                funct();
-            ">View</button>
+                <button class="view-workout" muscle-group="back">View</button>
             </div>
-        </a>
-        <a href="../Page 2/index.html">
+       
+        
             <div class="container">
                 <img class="image" src="download (2).jpg">
                 <p class="title">Legs</p>
-                <button onclick="
-                chosenElement='legs';
-                funct();
-            ">View</button>
+                <button class="view-workout" muscle-group="legs">View</button>
             </div>
-        </a>
-        <a href="../Page 2/index.html">
+        
             <div class="container">
                 <img class="image" src="download (3).jpg">
                 <p class="title">Abs</p>
-                <button onclick="
-                chosenElement='abs';
-                funct();
-            ">View</button>
+                <button class="view-workout" muscle-group="abs" >View</button>
             </div>
-        </a>
         <script>
+            const viewWorkoutButtons = document.querySelectorAll(".view-workout")
+            viewWorkoutButtons.forEach(function(viewWorkoutButton) {
+                viewWorkoutButton.addEventListener('click', function() {
+                    const chosenMuscleGroup = viewWorkoutButton.getAttribute('muscle-group')
+                    localStorage.setItem('chosenMuscleGroup', chosenMuscleGroup)
+                    window.location.href = "/Page 2/index.html";
+                });
+            })
+                
             let chosenElement;
             function funct(){
                 localStorage.setItem('name', chosenElement);
-                window.location.href = "Page2/index.html";
+                window.location.href = "Page 2/index.html";
             }
             </script>
 </body>
 </html>
-

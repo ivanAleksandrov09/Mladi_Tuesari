@@ -30,7 +30,7 @@ button:hover{
     background-color: rgb(101, 101, 255);
     cursor: pointer;
 }
-body div{
+.boxes{
     display:inline-block;
     height: 210px;
     width: 405px;

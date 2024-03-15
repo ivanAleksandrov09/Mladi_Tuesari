@@ -9,38 +9,182 @@
 <body>
 
     <p id="header">Chest Workout for Beginers</p>
+    <p class="video-title">Hi eufeifeifeifj</p>
+    <iframe class="video-video"width="1000" height="580" align="right" src="https://www.youtube.com/embed/aP7kVq5bewo" title="I&#39;m tired" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     <div id="exercises">
     <button>
-        <p>
-            &#183; <u>Bench press</u> > 3 sets x 5 reps x 15 kilos
+        <p id="exc1">
+             &#183; <u>Test 1</u> > 3 sets x 5 reps x 15 kilos
         </p>
     </button>
     <button>
-        <p>
-            &#183; <u>Push ups</u> > 3 sets x 10 reps
+        <p id="exc2">
+            &#183; <u>Test 2</u> > 3 sets x 10 reps
         </p>
     </button>
     <button>
-        <p>
-            &#183; <u>Dips</u> > 3 sets x 3 reps
+        <p id="exc3">
+            &#183; <u>Test 3</u> > 3 sets x 3 reps
         </p>
     </button>
     <button>
-        <p>
-            &#183; <u>Dumbell bench press</u> > 3 sets x 5 reps x 15 kilos
+        <p id="exc4">
+            &#183; <u>Test 4s</u> > 3 sets x 5 reps x 15 kilos
         </p>
     </button>
     </div>
 
-    <div id="preview">
-        <p>Hi</p>>
-        <iframe width="1115" height="627" src="https://www.youtube.com/embed/aP7kVq5bewo" title="I&#39;m tired" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    </div>
+    
 </body>
 <script>
-
+let finalChoise=localStorage.getItem('correctChoise');
+console.log(finalChoise);
+if (finalChoise==='BeginnerChest') {
+document.getElementById('header').textContent='Chest Workout for beginners';
+document.getElementById('exc1').textContent='Bench press > 5 sets x 16 reps x 25 kgs';
+document.getElementById('exc2').textContent='Push ups > 4 sets x 10 reps';
+document.getElementById('exc3').textContent='Dips > 3 sets x 5 reps';
+document.getElementById('exc4').textContent='Dumbell bench press > 3 sets x 7 reps x 8 kgs';
+}
+else if (finalChoise==='IntermidiateChest') {
+document.getElementById('header').textContent='Intermidiate Chest Workout';
+document.getElementById('exc1').textContent='Bench press > 5 sets x 10 reps x 35 kgs';
+document.getElementById('exc2').textContent='Push ups > 4 sets x 25 reps';
+document.getElementById('exc3').textContent='Dips > 4 sets x 12 reps';
+document.getElementById('exc4').textContent='Dumbell bench press > 3 sets x 10 reps x 12 kgs';
+}
+else if (finalChoise==='AdvancedChest') {
+document.getElementById('header').textContent='Advanced Chest Workout';
+document.getElementById('exc1').textContent='Bench press > 5 sets x 10 reps x 345 kgs';
+document.getElementById('exc2').textContent='Push ups > 6 sets x 30 reps';
+document.getElementById('exc3').textContent='Dips > 5 sets x 15 reps';
+document.getElementById('exc4').textContent='Dumbell bench press > 5 sets x 15 reps x 15 kgs';
+}
+else if (finalChoise==='BeginnerBiceps') {
+document.getElementById('header').textContent='Bicep Workout for beginners';
+document.getElementById('exc1').textContent='&#183; Dumbell curl > 3 sets x 3 reps x 5 kgs';
+document.getElementById('exc2').textContent='&#183; Hammer curls > 3 sets x 3 reps x 5 kgs';
+document.getElementById('exc3').textContent='&#183; Biceps curls > 3 sets x 3 reps x 5 kgs';
+document.getElementById('exc4').textContent='&#183; Reverse curls > 3 sets x 3 reps x 5 kgs';
+}
+else if (finalChoise==='IntermidiateBiceps') {
+document.getElementById('header').textContent=' Intermidiate Bicep Workout';
+document.getElementById('exc1').textContent='&#183; Dumbell curl > 5 sets x 6 reps x 10 kgs';
+document.getElementById('exc2').textContent='&#183; Hammer curls > 4 sets x 12 reps x 12 kgs';
+document.getElementById('exc3').textContent='&#183; Biceps curls > 5 sets x 12 reps x 12 kgs';
+document.getElementById('exc4').textContent='&#183; Reverse curls > 5 sets x 5 reps x 12 kgs';
+}
+else if (finalChoise==='AdvancedBiceps') {
+document.getElementById('header').textContent='Advanced Bicep Workout';
+document.getElementById('exc1').textContent='&#183; Dumbell curl > 5 sets x 15 reps x 15 kgs';
+document.getElementById('exc2').textContent='&#183; Hammer curls > 6 sets x 15 reps x 15 kgs';
+document.getElementById('exc3').textContent='&#183; Biceps curls > 6 sets x 15 reps x 18 kgs';
+document.getElementById('exc4').textContent='&#183; Reverse curls > 6 sets x 120 reps x 20 kgs';
+}
+else if (finalChoise==='BeginnerTriceps') {
+document.getElementById('header').textContent='Tricep Workout for beginners';
+document.getElementById('exc1').textContent='&#183; Scullcrushers > 3 sets x 3 reps x 5 kgs';
+document.getElementById('exc2').textContent='&#183; Tricep dips > 3 sets x 5 reps';
+document.getElementById('exc3').textContent='&#183; Tricep extensions > 3 sets x 3 reps x 5 kgs';
+document.getElementById('exc4').textContent='&#183; Reverse curls > 3 sets x 3 reps x 5 kgs';
+}
+else if (finalChoise==='IntermidiateTriceps') {
+document.getElementById('header').textContent='Intermidiate Tricep Workout';
+document.getElementById('exc1').textContent='&#183; Scullcrushers > 4 sets x 6 reps x 7 kgs';
+document.getElementById('exc2').textContent='&#183; Tricep dips > 4 sets x 10 reps';
+document.getElementById('exc3').textContent='&#183; Tricep extensions > 4 sets x 5 reps x 10 kgs';
+document.getElementById('exc4').textContent='&#183; Reverse curls > 5 sets x 7 reps x 8 kgs';
+}
+else if (finalChoise==='AdvancedTriceps') {
+document.getElementById('header').textContent=' Advanced Tricep Workout';
+document.getElementById('exc1').textContent='&#183; Scullcrushers > 6 sets x 8 reps x 10 kgs';
+document.getElementById('exc2').textContent='&#183; Tricep dips > 6 sets x 12 reps';
+document.getElementById('exc3').textContent='&#183; Tricep extensions > 6 sets x 8 reps x 16 kgs';
+document.getElementById('exc4').textContent='&#183; Reverse curls > 7 sets x 10 reps x 12 kgs';
+}
+else if (finalChoise==='BeginnerShoulders') {
+document.getElementById('header').textContent='Shoulders Workout for Beginners';
+document.getElementById('exc1').textContent='&#183; Dumbell push press > 3 sets x 3 reps x 5 kgs';
+document.getElementById('exc2').textContent='&#183; Military press > 3 sets x 5 reps X 2kg';
+document.getElementById('exc3').textContent='&#183; Lateral raises > 3 sets x 3 reps x 2 kgs';
+document.getElementById('exc4').textContent='&#183; Dumbell lateral raise > 3 sets x 3 reps x 5 kgs';
+}
+else if (finalChoise==='IntermidiateShoulders') {
+document.getElementById('header').textContent='Intermidiate Shoulders Workout';
+document.getElementById('exc1').textContent='&#183; Dumbell push press > 4 sets x 5 reps x 8 kgs';
+document.getElementById('exc2').textContent='&#183; Military press > 5 sets x 7 reps x 4kg';
+document.getElementById('exc3').textContent='&#183; Lateral raises > 4 sets x 6 reps x 3 kgs';
+document.getElementById('exc4').textContent='&#183; Dumbell lateral raise > 5 sets x 6 reps x 8 kgs';
+}
+else if (finalChoise==='AdvancedShoulders') {
+document.getElementById('header').textContent='Advanced Shoulders Workout';
+document.getElementById('exc1').textContent='&#183; Dumbell push press > 5 sets x 7 reps x 12 kgs';
+document.getElementById('exc2').textContent='&#183; Military press > 4 sets x 14 reps x 6kg';
+document.getElementById('exc3').textContent='&#183; Lateral raises > 5 sets x 12 reps x 5 kgs';
+document.getElementById('exc4').textContent='&#183; Dumbell lateral raise > 6 sets x 8 reps x 8 kgs';
+}
+else if (finalChoise==='BeginnerBack') {
+document.getElementById('header').textContent='Back Workout for Beginners';
+document.getElementById('exc1').textContent='&#183; Deadlift > 3 reps x 30 kgs';
+document.getElementById('exc2').textContent='&#183; Pull ups > 3 sets x 5 reps';
+document.getElementById('exc3').textContent='&#183; Lateral Pull-down > 3 sets x 3 reps x 5 kgs';
+document.getElementById('exc4').textContent='&#183; T-bar row > 3 sets x 3 reps x 5 kgs';
+}
+else if (finalChoise==='IntermidiateBack') {
+document.getElementById('header').textContent='Intermidiate Back Workout';
+document.getElementById('exc1').textContent='&#183; Deadlift > 5 reps x 40 kgs';
+document.getElementById('exc2').textContent='&#183; Pull ups > 5 sets x 8 reps';
+document.getElementById('exc3').textContent='&#183; Lateral Pull-down > 6 sets x 5 reps x 8 kgs';
+document.getElementById('exc4').textContent='&#183; T-bar row > 6 sets x 10 reps x 8 kgs';
+}
+else if (finalChoise==='AdvancedBack') {
+document.getElementById('header').textContent=' Advanced Back Workout Advanced';
+document.getElementById('exc1').textContent='&#183; Deadlift > 6 reps x 50 kgs';
+document.getElementById('exc2').textContent='&#183; Pull ups > 7 sets x 12 reps';
+document.getElementById('exc3').textContent='&#183; Lateral Pull-down > 8 sets x 7 reps x 12 kgs';
+document.getElementById('exc4').textContent='&#183; T-bar row > 8 sets x 12 reps x 12 kgs';
+}
+else if (finalChoise==='BeginnerLegs') {
+document.getElementById('header').textContent='Leg Workout for Beginners';
+document.getElementById('exc1').textContent='&#183; Squat > 3 sets x 10 reps';
+document.getElementById('exc2').textContent='&#183; Leg curl > 3 sets x 5 reps x 25 kgs';
+document.getElementById('exc3').textContent='&#183; Front squat > 3 sets x 5 reps x 20 kgs';
+document.getElementById('exc4').textContent='&#183; Jump squat > 3 sets x 10 reps x 20 kgs';
+}
+else if (finalChoise==='IntermidiateLegs') {
+document.getElementById('header').textContent=' Intermidiate Leg Workout';
+document.getElementById('exc1').textContent='&#183; Squat > 4 sets x 10 reps';
+document.getElementById('exc2').textContent='&#183; Leg curl > 3 sets x 5 reps x 25 kgs';
+document.getElementById('exc3').textContent='&#183; Front squat > 3 sets x 5 reps x 20 kgs';
+document.getElementById('exc4').textContent='&#183; Jump squat > 3 sets x 10 reps x 20 kgs';
+}
+else if (finalChoise==='AdvancedLegs') {
+document.getElementById('header').textContent='Advanced Leg Workout';
+document.getElementById('exc1').textContent='&#183; Squat > 4 sets x 10 reps';
+document.getElementById('exc2').textContent='&#183; Leg curl > 3 sets x 5 reps x 25 kgs';
+document.getElementById('exc3').textContent='&#183; Front squat > 3 sets x 5 reps x 20 kgs';
+document.getElementById('exc4').textContent='&#183; Jump squat > 3 sets x 10 reps x 20 kgs';
+}
+else if (finalChoise==='BeginnerAbs') {
+document.getElementById('header').textContent='Ab Workout for Beginners';
+document.getElementById('exc1').textContent='&#183; Crunches > 3 sets x 5 reps';
+document.getElementById('exc2').textContent='&#183; Russian twists > 3 sets x 5 reps';
+document.getElementById('exc3').textContent='&#183; Figure 8s > 3 sets x 5 reps';
+document.getElementById('exc4').textContent='&#183; Circle crunches > 3 sets x 5 reps';
+}
+else if (finalChoise==='IntermidiateAbs') {
+document.getElementById('header').textContent='Intermidiate Ab Workout';
+document.getElementById('exc1').textContent='&#183; Crunches > 5 sets x 12 reps';
+document.getElementById('exc2').textContent='&#183; Russian twists > 5 sets x 12 reps';
+document.getElementById('exc3').textContent='&#183; Figure 8s > 4 sets x 14 reps';
+document.getElementById('exc4').textContent='&#183; Circle crunches > 8 sets x 6 reps';    
+}
+else if (finalChoise==='AdvancedAbs') {
+document.getElementById('header').textContent='Advanced Ab Workout';
+document.getElementById('exc1').textContent='&#183; Crunches > 7 sets x 30 reps';
+document.getElementById('exc2').textContent='&#183; Russian twists > 7 sets x 15 reps';
+document.getElementById('exc3').textContent='&#183; Figure 8s > 6 sets x 20 reps';
+document.getElementById('exc4').textContent='&#183; Circle crunches > 6 sets x 20 reps';    
+}
 </script>
-</html>
-
-</body>
 </html>

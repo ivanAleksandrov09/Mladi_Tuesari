@@ -20,25 +20,22 @@ button{
     
 }
 
-.container {
-    text-align: center;
-    height: 400px;
-    max-width: 300px;
-    margin: 30px;
-}
+
 button:hover{
     background-color: rgb(101, 101, 255);
     cursor: pointer;
 }
-.boxes{
+.muscle-group-wrapper{
     display:inline-block;
-    height: 210px;
+    height: 400px;
     width: 405px;
     margin-left: 10%;
-    margin-top: 22em;
     border: 2px solid black;
     border-radius: 10px;
     box-shadow: 5px 5px 5px hsl(0, 0%, 0%, 0.1);
+    text-align: center;
+    max-width: 300px;
+    margin: 30px;
     
 }
 .image {

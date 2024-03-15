@@ -17,22 +17,23 @@
     </nav>
     <div class="container">
         <h1 class="title">Select workout intensity</h1>
-        <a id="beginner-button" href="../Page 3/page3.universal.html"><button class="button" onclick="
-        intensity='beginner';
-        func();
-        finalChoise();
-        ">Beginner</button></a>
-        <a id="intermidiate-button" href="../Page 3/page3.universal.html"><button class="button" onclick="
-        intensity='intermidiate';
-        func();
-        finalChoise()
-        ">Intermidiate</button></a>
-        <a id="advanced-button" href="../Page 3/page3.universal.html"><button class="button" onclick="
-        intensity='advanced';
-        func();
-        finalChoise();
-        ">Advanced</button></a>
-    </div>
+        <div id="Contain1">
+            <a id="beginner-button" href="../Page 3/page3.universal.html"><button class="button" onclick="
+            intensity='beginner';
+            func();
+            finalChoise();
+            ">Beginner</button></a></div>
+            <div id="Contain2"><a id="intermidiate-button" href="../Page 3/page3.universal.html"><button class="button" onclick="
+            intensity='intermidiate';
+            func();
+            finalChoise()
+            ">Intermidiate</button></a></div>
+            <div id="Contain3"><a id="advanced-button" href="../Page 3/page3.universal.html"><button class="button" onclick="
+            intensity='advanced';
+            func();
+            finalChoise();
+            ">Advanced</button></a></div>
+</div>
 </body>
 <script>
     let savedChose=localStorage.getItem('name');

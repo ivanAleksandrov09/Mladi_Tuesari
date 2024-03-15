@@ -7,6 +7,7 @@ body {
     border: none;
     display:flex;
     max-height: 50px;
+    box-shadow:none;
 }
 
 .container .title {
@@ -15,9 +16,11 @@ body {
     min-width: 1450px;
     position: relative;
     text-align:center;
+    box-shadow:none;
 }
 
 .container .button {
+    box-shadow:none;
     float:left;
     overflow: auto;
     margin-left:100px;
@@ -43,6 +46,8 @@ body {
     position: relative;
     top:200px;
     right:1390px;
+    border:none;
+    box-shadow:0px 0px;
 }
 #Contain2{
     max-height:100px;
@@ -50,6 +55,8 @@ body {
     position: relative;
     top:200px;
     right:1390px;
+    border:none;
+    box-shadow:0px 0px;
 }
 #Contain3{
     max-height:100px;
@@ -57,4 +64,6 @@ body {
     position: relative;
     top:200px;
     right:1390px;
+    border:none;
+    box-shadow:0px 0px;
 }

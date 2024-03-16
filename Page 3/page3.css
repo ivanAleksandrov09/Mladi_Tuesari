@@ -6,6 +6,9 @@ body {
 #exercises {
   max-width: fit-content;
 }
+.exercises-list {
+  flex: 1;
+}
 #header {
   max-width: fit-content;
   font-size: 3em;
@@ -22,8 +25,8 @@ button {
 #video-video {
   border-radius: 15px;
   border: 3px solid hsl(211, 72%, 60%);
-  margin-bottom: 150px;
-  margin-right: 300px;  
+  margin-bottom: 50px;
+  margin-right: 50px;
 }
 #preview{
   text-align: right;
@@ -121,6 +124,7 @@ footer{
 }
 .Nav{
   margin: 30px 0;
+  font-size: 20px;
 }
 .Nav ul{
   display: flex;
@@ -166,6 +170,8 @@ footer{
 .grid {
   display: flex;
   flex-direction: column;
-  flex: 1;
   min-height: 100vh;
+}
+.page-title {
+  text-align: right;
 }

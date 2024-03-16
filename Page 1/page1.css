@@ -1,5 +1,6 @@
 body {
     background-color: rgb(31, 28, 28);
+    font-family: Arial, sans-serif;
 }
 .page_title {
     text-align: right;
@@ -57,6 +58,14 @@ button:hover{
     overflow: hidden;
     font-size:1.5em;
 
+}
+.logo-container {
+    text-align: right;
+}
+.logo {
+    float: right;
+    max-width: 120px;
+    max-height: 120px;
 }
 
 .navbar a{
@@ -116,6 +125,7 @@ footer{
 }
 .Nav{
     margin: 30px 0;
+    font-size: 20px;
 }
 .Nav ul{
     display: flex;

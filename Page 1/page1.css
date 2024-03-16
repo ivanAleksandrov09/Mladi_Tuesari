@@ -59,14 +59,7 @@ button:hover{
     font-size:1.5em;
 
 }
-.logo-container {
-    text-align: right;
-}
-.logo {
-    float: right;
-    max-width: 120px;
-    max-height: 120px;
-}
+
 
 .navbar a{
     margin: 0px;
@@ -83,11 +76,6 @@ button:hover{
 
 .navbar li{
     float: left;
-}
-
-video{
-    height: 300px;
-    
 }
 
 footer{
